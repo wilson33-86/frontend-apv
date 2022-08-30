@@ -37,7 +37,7 @@ useEffect(()=>{
       alerta={alerta}
     />}
     {confircuent && 
-    <Link to="/" className="block text-center my-5 text-gray-500"> Iniciar sesión</Link>}
+    <Link to="/" className="block text-center my-5 text-gray-500"> Iniciar sesión </Link>}
    </div>
    </>
   )
