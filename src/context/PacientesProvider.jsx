@@ -40,7 +40,7 @@ export const PacientesProvider = ({children})=>{
 
         if(paciente.id){
             try {
-                const{data} = await clienteAxios(`/pacientes/${paciente.id}`,paciente,config);
+                const{data} = await clienteAxios.put(`/pacientes/${paciente.id}`,paciente,config);
                 const pacienteUpd = pacientes.map(pacient=>{ pacient._id===data._id ? data: pacient})
                 setPacientes(pacienteUpd)
             } catch (error) {
